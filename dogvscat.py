@@ -92,7 +92,7 @@ history = model.fit_generator(
     validation_steps=validation_samples // batch_size)
 
 
-img = image.load_img('download1.png',
+img = image.load_img('test\download1.png',
                      target_size=(150, 150))
 img = image.img_to_array(img)
 img = np.expand_dims(img, axis=0)
@@ -104,7 +104,7 @@ if result[0][0] == 1:
 else:
     pred = "This a dog"
 
-image = Image.open('download1.png')
+image = Image.open('test\download1.png')
 plt.imshow(image)
 
 print(pred)
